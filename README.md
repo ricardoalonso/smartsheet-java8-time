@@ -2,14 +2,18 @@
 
 This is project test to demostrate a problem using regular java.util.Date class, where the date stored into the sheet is being shifted one day before. Using the java.time library (Java 8 Time) this problem doesn't present. 
 
+Before runing you must obtain an access token from <https://smartsheet.com> and update the sheet id at both classes with one you can read and write to. 
 
 ### To run the regular Java Date test:
 ```
+export SMARTSHEET_ACCESS_TOKEN=<your_access_token>
 mvn java@java-date
 ```
 
 ### To run the Java 8 Time test:
 ```
+export SMARTSHEET_ACCESS_TOKEN=<your_access_token>
+
 mvn java@java8-time
 ```
 
